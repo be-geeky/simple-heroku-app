@@ -1,0 +1,10 @@
+{
+    "name": "root/nlp",
+    "authors": [
+        {
+            "name": "Dushyant Joshi",
+            "email": "dushyantjoshia@gmail.com"
+        }
+    ],
+    "require": {}
+}
