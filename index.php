@@ -1,4 +1,4 @@
 <?php
  
-echo "my first app for heroku in PHP";
+echo "my first app for heroku in PHP and js";
 
