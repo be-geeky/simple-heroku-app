@@ -10,7 +10,7 @@ function processMessage($update) {
     $input = $test->format('H:i');
     $is_between_dates = isBetween($from, $to, $input);
 
-    if ($update["result"]["action"] == "is_livechat" && $is_between_dates) {
+    //if ($update["result"]["action"] == "is_livechat" && $is_between_dates) {
         $text = 'Please click <a href="https://www.teamhgs.com/we-want-hear-you"> here </a> for Business Related Inquiries';
         sendMessage(array(
             "source" => $update["result"]["source"],
@@ -19,7 +19,7 @@ function processMessage($update) {
             "contextOut" => array()
         ));
     }
-}
+//}
 
 function sendMessage($parameters) {
     echo json_encode($parameters);
