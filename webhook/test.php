@@ -1,6 +1,7 @@
 <?php
 
 function processMessage($update) {
+date_default_timezone_set('America/New_York');
 
     $from = '09:00';
     $to = '18:00';
