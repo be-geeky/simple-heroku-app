@@ -12,7 +12,8 @@ date_default_timezone_set('America/New_York');
     $is_between_dates = isBetween($from, $to, $input);
 
     if ($update["result"]["action"] == "is_livechat" && !$is_between_dates) {
-        $text = 'Please click <a href="https://www.teamhgs.com/we-want-hear-you" target="_blank"> here </a> for Business Related Inquiries';
+        //$text = 'Please click <a href="https://www.teamhgs.com/we-want-hear-you" target="_blank"> here </a> for Business Related Inquiries';
+        $text = 'Please  click <a href="javascript:void(0);" class="live-chat">here</a>  to provide your details. A relevant support representative will be in touch with you';
         sendMessage(array(
             "source" => $update["result"]["source"],
             "speech" => $text,
