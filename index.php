@@ -25,6 +25,7 @@ messaging.requestPermission()
 })
 .then(function(token) {
   console.log(token); // Display user token
+  document.write(token);
   alert(token);
 })
 .catch(function(err) { // Happen if user deney permission
