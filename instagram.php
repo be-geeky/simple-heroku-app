@@ -20,10 +20,9 @@ $url = 'https://api.instagram.com/v1/tags/' . $tag . '/media/recent?client_id=' 
 $all_result = processURL($url);
 $decoded_results = json_decode($all_result, true);
 
-// echo '<pre>';
-// print_r($decoded_results);
-// exit;
-
+echo '<pre>';
+print_r($decoded_results);
+echo "Working";
 //Now parse through the $results array to display your results...
 foreach ($decoded_results['data'] as $item) {
 	$image_link = $item['images']['thumbnail']['url'];
